@@ -34,7 +34,7 @@ async function procesos() {
         await time(3000);
         console.log("se han ingresado los datos del comprador");
 
-        await time(1500);
+        await time(3000);
         console.log("la compra se realizo correctamente");
 
         await time(1000);
