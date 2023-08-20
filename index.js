@@ -46,6 +46,7 @@ async function procesos() {
 
     finally {
         console.log("tiempo total de ejecucion: 9min");
+        console.log(`La media de clientes atendidos en 1h es de ${Math.round(media_1)} clientes`);
     };
 };
 
@@ -61,10 +62,15 @@ const tasks_2 = [
     "guardar producto(s) en bolsa -> 1min"
 ];
 
+let media_1 = 480 / 9;
+let media_2 = 480 / 7.5;
+let mejora = media_2 - media_1;
+let procentaje = (mejora / media_1) * 100;
+
 async function procesos_2() {
     try {
 
-        await time(10000);
+        await time(11000);
         console.log(mensaje);
 
         for(let i = 0; i < tasks_2.length; i++) {
@@ -89,6 +95,9 @@ async function procesos_2() {
 
     finally {
         console.log("tiempo total de ejecucion: 7.5min");
+        console.log(`La media de clientes atendidos en 1h es de ${media_2} clientes`);
+        console.log(`Resultando en un incremento de ${Math.round(mejora)} clientes atendidos en una jornada`);
+        console.log(`Resultando en un incremento de ${Math.round(procentaje)}%`);
     };
 };
 
