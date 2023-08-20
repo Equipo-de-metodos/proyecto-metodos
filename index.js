@@ -46,7 +46,7 @@ async function procesos() {
 
     finally {
         console.log("tiempo total de ejecucion: 9min");
-        console.log(`La media de clientes atendidos en 1h es de ${Math.round(media_1)} clientes`);
+        console.log(`La media de clientes atendidos en 8h es de ${Math.round(media_1)} clientes`);
     };
 };
 
@@ -95,7 +95,7 @@ async function procesos_2() {
 
     finally {
         console.log("tiempo total de ejecucion: 7.5min");
-        console.log(`La media de clientes atendidos en 1h es de ${media_2} clientes`);
+        console.log(`La media de clientes atendidos en 8h es de ${media_2} clientes`);
         console.log(`Resultando en un incremento de ${Math.round(mejora)} clientes atendidos en una jornada`);
         console.log(`Resultando en un incremento de ${Math.round(procentaje)}%`);
     };
